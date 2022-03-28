@@ -5,7 +5,7 @@
 @*@model IQueryable<Bowler>*@
 @model BowlersViewModel
 
-@foreach(var t in ViewBag.SelectTeamName)
+@*@foreach(var t in ViewBag.SelectTeamName)
 {
     if(t.TeamName == null)
     {
@@ -15,7 +15,7 @@
     {
         <h1>@t.TeamName</h1>
     }
-}
+}*@
 <a class="btn btn-sm btn-info" asp-controller="Home" asp-action="AddBowler">Add New Bowler</a>
 
 <table class="table table-striped table-bordered">
