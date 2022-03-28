@@ -1,0 +1,12 @@
+﻿
+@{
+}
+@model Bowler
+
+<h1>Are You Sure You Want to Delete?</h1>
+<form method="post" asp-action="Delete">
+    <input type="hidden" asp-for="BowlerID"/>
+    <button type="submit" class="btn-secondary">Delete</button>
+    <a class="btn btn-sm btn-info" asp-action="Index">Cancel</a>
+</form>
+
