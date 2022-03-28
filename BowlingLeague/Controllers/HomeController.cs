@@ -94,6 +94,11 @@ namespace BowlingLeague.Controllers
         {
             if (ModelState.IsValid)
             {
+                //if (Id != 0)
+                //{
+                //    b = repo.Books.FirstOrDefault(x => x.BookId == Id);
+                //}
+                repo.UpdateBowler(bowler);
                 repo.SaveBowler(bowler);
                 return RedirectToAction("Index");
             }
