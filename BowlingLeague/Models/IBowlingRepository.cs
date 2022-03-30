@@ -11,6 +11,7 @@ namespace BowlingLeague.Models
         IQueryable<Bowler> Bowlers { get; }
         IQueryable<Team> Teams { get; }
 
+        void UpdateBowler(Bowler b);
         void SaveBowler (Bowler b);
         void CreateBowler(Bowler b);
         void DeleteBowler(Bowler b);
