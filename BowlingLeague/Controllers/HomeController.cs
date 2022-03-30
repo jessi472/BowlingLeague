@@ -30,6 +30,7 @@ namespace BowlingLeague.Controllers
             //    .Include(x => x.Team)
             //    .Skip(pageNum - 1 * pageSize)
             //    .Take();
+            ViewData["TeamName"] = teamName;
 
             var bowlers = new BowlersViewModel
             {
